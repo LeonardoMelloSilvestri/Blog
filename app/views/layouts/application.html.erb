@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+</head>
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active">
+                        <%= link_to "Home", root_path%>
+                    <li>
+                    <li role="presentation">
+                        <%= link_to "Sobre", root_path%>
+                    </li>
+                    <li role="presentation">Postar</li>
+                </ul>
+            </nav>  
+        <h3 class="text-muted">Blog do Dev</h3>
+        </div>
+        <%= yield %>
+        <footer class="footer">
+            <p>&copy; 2016 Company, Inc.</p>
+        </footer>
+    <div><!--/container-->
+</body>
+</html>
