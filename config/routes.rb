@@ -5,8 +5,6 @@ Rails.application.routes.draw do
 
   get 'home/index'
   
-  get 'home/teste'
-  
   root 'home#index'
   
   #link
